@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="tetris.css">
+
+<title>TETRIS</title>
+</head>
+<body onload="initialize()" onkeypress= "key(event)" >
+<div class="container" id="contain">
+<img src="image.png" id="logo">
+<div id="opac1"></div>
+<div class="font">1417</div>
+<div id="instruction">
+<div class="font">Keys:</div>
+<div class="font">Press W to rotate</div>
+<div class="font">press S to Drop Faster</div>
+<div class="font">Press A or D to Move left or right</div> 
+</div>
+<img src="5.png" id="v">
+<img src="score.png" id="scoretxt">
+<button onclick="run()" id="button">Start</button>
+<button onclick="restart()" id="button2">Restart</button>
+<button id="button3" onclick="pause(this)">Pause</button>
+<div id="score"></div>
+<div id="opac"></div>
+	<div id="board">
+	<table id="tab">
+	
+	</table>
+	
+	</div>
+	
+	<!--<table id="nextTab">
+	<tr><td></td><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td></td><td></td></tr>
+	</table>-->
+</div>
+
+<script src="tetrisv5.js">
+</script>
+</body>
+</html>
